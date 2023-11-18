@@ -1,0 +1,27 @@
+body, html {
+  background-color: rgb(20, 20, 20);
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 200px;
+}
+
+#textarea {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 80%;
+  height: 40%;
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 10px;
+  background-color: rgb(20, 20, 20);
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14pt;
+  outline: none;
+}
