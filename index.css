@@ -7,7 +7,7 @@ body, html {
   top: 10px;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 200px;
+  width: 150px;
 }
 
 #textarea {
@@ -22,6 +22,6 @@ body, html {
   background-color: rgb(20, 20, 20);
   resize: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 14pt;
+  font-size:calc(100% + 1vw);
   outline: none;
 }
