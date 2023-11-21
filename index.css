@@ -1,5 +1,5 @@
 body, html {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(34, 38, 44)
 }
 
 .logo {
@@ -7,21 +7,60 @@ body, html {
   top: 10px;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 150px;
+  width: 120px;
+}
+
+.fontlogo {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, 0%);
 }
 
 #textarea {
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 80%;
-  height: 40%;
-  border: 1px solid rgb(40, 40, 40);
+  height: 28%;
+  border: 1px solid rgb(97, 111, 136);
   border-radius: 10px;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(34, 38, 44);
   resize: none;
   font-family: 'Courier New', Courier, monospace;
   font-size:calc(100% + 1vw);
   outline: none;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 60%;
+  height: 30%;
+  position: fixed;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  margin: auto;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgb(153, 109, 255);
+  border-radius: 10px;
+  font-size: 12pt;
+  color: rgb(153, 109, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: rgb(153, 109, 255);
+  color: white;
+  cursor: pointer;
 }
