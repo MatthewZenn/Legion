@@ -4,6 +4,7 @@ var age = 0;
 var country = 'asd';
 var gender = '';
 var p = 0;
+var place = 'Hotel';
 
 var countries = ['America', 'India', 'Germany', 'Canada']
 
@@ -75,5 +76,38 @@ function canadanames() {
   }
   else {
     firstname = females_canada[Math.floor(Math.random()*females_canada.length)];
+  }
+}
+
+document.getElementById("names").addEventListener('click', () => {
+  Persons();
+});
+
+document.getElementById("settings").addEventListener('click', () => {
+  setting();
+});
+
+function Persons() {
+  document.getElementById('textarea').innerHTML = '';
+
+  for (let i = 0; i < 5; i++) {
+    p = Math.random();
+
+    if (p <= 0.5) {
+      firstname = males_us[Math.floor(Math.random()*males_us.length)];
+    }
+    else firstname = females_us[Math.floor(Math.random()*females_us.length)];
+
+    lastname = lastnames[Math.floor(Math.random()*lastnames.length)];
+    document.getElementById('textarea').innerHTML += firstname + ' ' + lastname + '\n';
+  }
+}
+
+function setting() {
+  document.getElementById('textarea').innerHTML ='';
+
+  for (let j = 0; j < 3; j++) {
+    place = locations[Math.floor(Math.random()*locations.length)];
+    document.getElementById('textarea').innerHTML += place + '\n';
   }
 }

@@ -25,9 +25,9 @@ body, html {
   transform: translate(-50%, 0%);
   width: 80%;
   height: 28%;
-  border: 1px solid rgb(97, 111, 136);
+  border: 1px solid rgb(54, 61, 71);
   border-radius: 10px;
-  background-color: rgb(34, 38, 44);
+  background-color: rgb(29, 33, 39);
   resize: none;
   font-family: 'Courier New', Courier, monospace;
   font-size:calc(100% + 1vw);
