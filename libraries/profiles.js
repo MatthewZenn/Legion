@@ -5,7 +5,8 @@ var country = 'asd';
 var gender = '';
 var p = 0;
 var place = 'Hotel';
-var genere = 'FPS'
+var genere = 'FPS';
+var themel = 'Apocalypse';
 
 var countries = ['America', 'India', 'Germany', 'Canada']
 
@@ -92,6 +93,10 @@ document.getElementById("genre").addEventListener('click', () => {
   Genere();
 });
 
+document.getElementById("theme").addEventListener('click', () => {
+  Themes();
+});
+
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
 
@@ -124,4 +129,13 @@ function Genere() {
   document.getElementById('textarea').innerHTML += genre + '\n + \n';
   genre = genres[Math.floor(Math.random()*genres.length)];
   document.getElementById('textarea').innerHTML += genre;
+}
+
+function Themes() {
+  document.getElementById('textarea').innerHTML ='';
+
+  for (let j = 0; j < 3; j++) {
+    themel = themes[Math.floor(Math.random()*themes.length)];
+    document.getElementById('textarea').innerHTML += themel + '\n';
+  }
 }
