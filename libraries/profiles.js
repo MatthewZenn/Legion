@@ -14,6 +14,22 @@ document.getElementById("profile").addEventListener('click', () => {
   identity();
 });
 
+document.getElementById("names").addEventListener('click', () => {
+  Persons();
+});
+
+document.getElementById("settings").addEventListener('click', () => {
+  setting();
+});
+
+document.getElementById("genre").addEventListener('click', () => {
+  Genere();
+});
+
+document.getElementById("theme").addEventListener('click', () => {
+  Themes();
+});
+
 function identity() {
   document.getElementById('textarea').innerHTML = '';
   age = Math.floor(Math.random() * (60 - 18 + 1) + 18);
@@ -81,22 +97,6 @@ function canadanames() {
   }
 }
 
-document.getElementById("names").addEventListener('click', () => {
-  Persons();
-});
-
-document.getElementById("settings").addEventListener('click', () => {
-  setting();
-});
-
-document.getElementById("genre").addEventListener('click', () => {
-  Genere();
-});
-
-document.getElementById("theme").addEventListener('click', () => {
-  Themes();
-});
-
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
 
@@ -134,7 +134,7 @@ function Genere() {
 function Themes() {
   document.getElementById('textarea').innerHTML ='';
 
-  for (let j = 0; j < 3; j++) {
+  for (let k = 0; k < 3; k++) {
     themel = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += themel + '\n';
   }
