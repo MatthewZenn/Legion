@@ -26,10 +26,6 @@ document.getElementById("genre").addEventListener('click', () => {
   Genere();
 });
 
-document.getElementById("theme").addEventListener('click', () => {
-  Themes();
-});
-
 function identity() {
   document.getElementById('textarea').innerHTML = '';
   age = Math.floor(Math.random() * (60 - 18 + 1) + 18);
@@ -129,6 +125,7 @@ function Genere() {
   document.getElementById('textarea').innerHTML += genre + '\n + \n';
   genre = genres[Math.floor(Math.random()*genres.length)];
   document.getElementById('textarea').innerHTML += genre + '\n\n';
+  
   for (let k = 0; k < 3; k++) {
     themel = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += themel + '\n';
