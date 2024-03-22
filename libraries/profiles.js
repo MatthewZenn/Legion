@@ -128,12 +128,7 @@ function Genere() {
   genre = genres[Math.floor(Math.random()*genres.length)];
   document.getElementById('textarea').innerHTML += genre + '\n + \n';
   genre = genres[Math.floor(Math.random()*genres.length)];
-  document.getElementById('textarea').innerHTML += genre;
-}
-
-function Themes() {
-  document.getElementById('textarea').innerHTML ='';
-
+  document.getElementById('textarea').innerHTML += genre + '\n\n';
   for (let k = 0; k < 3; k++) {
     themel = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += themel + '\n';
