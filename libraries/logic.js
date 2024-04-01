@@ -7,9 +7,9 @@ var p = 0;
 var place = 'Hotel';
 var genere = 'FPS';
 var themel = 'Apocalypse';
-const prefixes = ['XX_', 'Xx_', 'XX.', 'Xx.', 'The', '#1', 'THE', 'Captain', ''];
-const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere', '99', '3', '', '++'];
-const spaces = ['', '_', '.', '-'];
+const prefixes = ['XX_', 'Xx_', 'XX.', 'Xx.', 'The', '#1', 'THE', 'Captain', '', 'Black', 'Yellow', 'Green', 'Purple'];
+const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere', '99', '3', '', '++', '343', '47'];
+const spaces = ['', '_', '.'];
 const countries = ['America', 'Germany', 'Canada']
 
 document.getElementById("profile").addEventListener('click', () => {
@@ -34,7 +34,7 @@ document.getElementById("genre").addEventListener('click', () => {
 
 function identity() {
   document.getElementById('textarea').innerHTML = '';
-  age = Math.floor(Math.random() * (60 - 18 + 1) + 18);
+  age = Math.floor(Math.random() * (70 - 18 + 1) + 18);
   p = Math.random();
 
   if(p >= 0.5) {
@@ -105,17 +105,17 @@ function setting() {
   }
   document.getElementById('textarea').innerHTML += '\n';
   for (let j = 0; j < 3; j++) {
-    place = stories[Math.floor(Math.random()*stories.length)];
+    place = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += place + '\n';
   }
 }
 
 function Genere() {
   document.getElementById('textarea').innerHTML ='';
-  genre = genres[Math.floor(Math.random()*genres.length)];
-  document.getElementById('textarea').innerHTML += genre + '\n + \n';
-  genre = genres[Math.floor(Math.random()*genres.length)];
-  document.getElementById('textarea').innerHTML += genre + '\n\n';
+  genere = genres[Math.floor(Math.random()*genres.length)];
+  document.getElementById('textarea').innerHTML += genere + '\n + \n';
+  genere = genres[Math.floor(Math.random()*genres.length)];
+  document.getElementById('textarea').innerHTML += genere + '\n\n';
   for (let k = 0; k < 3; k++) {
     themel = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += themel + '\n';
@@ -134,27 +134,27 @@ function usernames() {
 
     var re = tag
     x = Math.random();
-    if (x <= 0.3) {
+    if (x <= 0.15) {
       tag = re.replace(/i/gi, '1');
       re = tag;
     }
     x = Math.random();
-    if (x <= 0.3) {
+    if (x <= 0.15) {
       tag = re.replace(/O/gi, '0');
       re = tag;
     }
     x = Math.random();
-    if (x <= 0.3) {
+    if (x <= 0.15) {
       tag = re.replace(/o/gi, '0');
       re = tag;
     }
     x = Math.random();
-    if (x <= 0.3) {
+    if (x <= 0.15) {
       tag = re.replace(/E/gi, '3');
       re = tag;
     }
     x = Math.random();
-    if (x <= 0.3) {
+    if (x <= 0.15) {
       tag = re.replace(/e/gi, '3');
     }
     document.getElementById('textarea').innerHTML += tag + '\n';

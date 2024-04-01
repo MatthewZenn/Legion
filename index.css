@@ -2,6 +2,11 @@ body, html {
   background-color: rgb(34, 38, 44)
 }
 
+@font-face {
+  font-family: SegoeIcons;
+  src:url("Assets/Segoe Fluent Icons.ttf");
+}
+
 .logo {
   position: fixed;
   top: 10px;
@@ -37,7 +42,7 @@ body, html {
 }
 
 .container {
-  width: 90%;
+  width: 99%;
   height: 30%;
   position: fixed;
   left: 50%;
@@ -48,14 +53,15 @@ body, html {
 }
 
 button {
-  width: 130px;
+  width: 150px;
   height: 40px;
   background-color: transparent;
   border: 1px solid rgb(153, 109, 255);
   border-radius: 10px;
   font-size: 12pt;
   color: rgb(153, 109, 255);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: helvetica, SegoeIcons;
+  text-align: center;
   margin: 5px;
 }
 
