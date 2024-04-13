@@ -32,6 +32,10 @@ document.getElementById("genre").addEventListener('click', () => {
   Genere();
 });
 
+document.getElementById("logo").addEventListener('click', () => {
+  Logo();
+});
+
 function identity() {
   document.getElementById('textarea').innerHTML = '';
   age = Math.floor(Math.random() * (70 - 18 + 1) + 18);
@@ -158,5 +162,14 @@ function usernames() {
       tag = re.replace(/e/gi, '3');
     }
     document.getElementById('textarea').innerHTML += tag + '\n';
+  }
+}
+
+function Logo() {
+  document.getElementById('textarea').innerHTML = '';
+  for (let l = 0; l < 3; l++) {
+    var brand = brands[Math.floor(Math.random()*brands.length)];
+    var style = styles[Math.floor(Math.random()*styles.length)];
+    document.getElementById('textarea').innerHTML += "A "+brand+" brand with a focus on "+style+".\n\n"
   }
 }
