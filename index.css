@@ -47,15 +47,15 @@ body, html {
   height: 30%;
   position: fixed;
   left: 50%;
-  top: 260px;
+  top: 250px;
   transform: translate(-50%, 0%);
   text-align: center;
   margin: auto;
 }
 
 button {
-  width: 150px;
-  height: 40px;
+  width: 160px;
+  height: 45px;
   background-color: rgb(25, 28, 32);
   border: none;
   border-radius: 10px;
@@ -68,6 +68,6 @@ button {
 
 button:hover {
   background-color: #FFDB6D;
-  color: white;
+  color: rgb(25, 28, 32);
   cursor: pointer;
 }
