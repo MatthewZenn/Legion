@@ -20,6 +20,6 @@ const themes = ["Enemy Within", "Out of Control", "Endless Odyssey", "Frozen in 
 
 const gamertags = ['Noob', 'Slayer', 'Master', 'Unicorn', 'Demon', 'Hammer', 'Gamer', 'Killer', 'Sith', 'Jedi', 'Cowboy', 'Boi', 'Cow', 'Pantz', 'Mushroom', 'Potato', 'Monster', 'Goddess', 'Thunder', 'Mario', 'Brian', 'Luigi', 'Dino', 'Hunter', 'Sonic', 'Shadow', 'Clown', 'Knuckles', 'Girl', 'Chaos', 'Cat', 'Guardian', 'Falcon', 'Rock', 'Blitz', 'Toad', 'Cookie', 'Twat', 'Beanz', 'King', 'Pirate', 'Goblin', 'Wizard', 'DJ', 'Alcolyte', 'Arbiter', 'Beast', 'Dragon', 'Helldiver', 'Warframe', 'Prime', 'Destroyer', 'Kermit', 'Frog', 'Chicken', 'Chief', 'Russian', 'American', 'Anime'];
 
-const brands = ['sport', 'tech', 'clothing', 'food', 'networking', 'music', 'transportation', 'media', 'shipping', 'productivity', 'wellness', 'design']
+const brands = ['sport', 'tech', 'clothing', 'food', 'networking', 'music', 'transportation', 'media', 'shipping', 'productivity', 'wellness', 'design', 'software', 'construction']
 
-const styles = ['sustainability', 'relations', 'self-care', 'cooking', 'managment', 'expression', 'AI', 'money']
+const styles = ['sustainability', 'relations', 'self-care', 'cooking', 'managment', 'expression', 'AI', 'money', 'students', 'productivity', 'education']
