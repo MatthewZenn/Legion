@@ -7,6 +7,7 @@ var p = 0;
 var place = 'Hotel';
 var genere = 'FPS';
 var themel = 'Apocalypse';
+var trope = 'scifi'
 const prefixes = ['XX_', 'Xx_', 'XX.', 'Xx.', 'The', '#1', 'THE', 'Captain', '', 'Black', 'Yellow', 'Green', 'Purple'];
 const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere', '99', '3', '', '++', '343', '47'];
 const spaces = ['', '_', '.'];
@@ -103,13 +104,12 @@ function Persons() {
 
 function setting() {
   document.getElementById('textarea').innerHTML ='';
+  trope = tropes[Math.floor(Math.random()*tropes.length)];
+  document.getElementById('textarea').innerHTML += trope + '\n + \n';
+  trope = tropes[Math.floor(Math.random()*tropes.length)];
+  document.getElementById('textarea').innerHTML += trope + '\n\n';
   for (let j = 0; j < 3; j++) {
     place = locations[Math.floor(Math.random()*locations.length)];
-    document.getElementById('textarea').innerHTML += place + '\n';
-  }
-  document.getElementById('textarea').innerHTML += '\n';
-  for (let j = 0; j < 3; j++) {
-    place = themes[Math.floor(Math.random()*themes.length)];
     document.getElementById('textarea').innerHTML += place + '\n';
   }
 }

@@ -24,3 +24,5 @@ const gamertags = ['Noob', 'Slayer', 'Master', 'Unicorn', 'Demon', 'Hammer', 'Ga
 const brands = ['sport', 'tech', 'clothing', 'food', 'networking', 'music', 'transportation', 'media', 'shipping', 'productivity', 'wellness', 'design', 'software', 'hardware', 'tourism', 'travel'];
 
 const styles = ['sustainability', 'relations', 'self-care', 'cooking', 'managment', 'expression', 'AI', 'money', 'students', 'productivity', 'education', 'creators', 'multimedia', 'animals', 'awarness', 'entertainment', ''];
+
+const tropes = ['Sci-Fi', 'Fantasy', 'Documentary', 'Apocalypse', 'Lovecraftian', 'Orwellian', 'Horror', 'Western', 'Historical', 'Mystery', 'Gothic', 'Cyberpunk', 'Steampunk', 'Raypunk', 'Alternate History', 'Drama', 'Comedy', 'Greek Tradgedy', 'Horatian Satire', 'Menippean Satire', 'Julian Satire', 'Mythos', 'Fable', 'Romance', 'Superhero', 'Satire', 'Dark Fantasy'];
