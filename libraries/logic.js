@@ -13,8 +13,6 @@ const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere',
 const spaces = ['', '_', '.'];
 const countries = ['America', 'Germany', 'Canada'];
 const styles = ['Country', 'Electronic', 'HipHop', 'Pop', 'Rock'];
-const Chord = ['Major', 'Minor', 'Diminished', 'Augmented', 'Major 7th', 'Minor 7th', 'Dominant 7th', 'Diminished 7th', 'Half-Diminished 7th', 'Diatonic', 'Slash', 'Sus', 'Add'];
-const Notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'Ab', 'Bb', 'C#', 'D#', 'G#', 'Eb']
 
 Array.prototype.random = function () {
   return this[Math.floor((Math.random()*this.length))];
@@ -146,7 +144,7 @@ function Logo() {
 
 function Music() {
   document.getElementById('textarea').innerHTML = '';
-  for (let z=0; z<3; z++) {
+  for (let z=0; z<5; z++) {
     var muse = styles.random();
     switch (muse) {
       case 'Country':
@@ -166,8 +164,4 @@ function Music() {
         break;
     }
   }
-  for (let o=0; o<3; o++) {
-    document.getElementById('textarea').innerHTML += '\n'+Notes.random()+' '+Chord.random();
-  }
-  document.getElementById('textarea').innerHTML += '\n\n'+Instruments.random()+' + '+Instruments.random();
 }
