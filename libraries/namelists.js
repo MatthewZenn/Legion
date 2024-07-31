@@ -23,3 +23,5 @@ const Electronic = ['Electronic', 'House', 'Acid House', 'Techno', 'Hard Bass', 
 const Rock = ['Rock', 'Metal', 'Heavy Metal', 'DeathCore', 'Progressive Metal', 'Christian rock', 'Mathcore', 'Thrasher', 'DoomCore', 'Argent Metal'];
 const HipHop = ['Hip-Hop', 'LoFi', 'Rap', 'Jazz', 'Trap', 'Crunk', 'Rythm & Blues', 'Jersey Club'];
 const Pop = ['Pop', 'K-Pop', 'J-Pop', 'BubbleGum', 'Dance Pop', 'Synth Pop', 'Disco'];
+
+const Instruments = ['Piano', 'Guitar', 'Clarinet', 'Electric Guitar', 'Keyboard', 'Harmonica'];

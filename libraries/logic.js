@@ -169,4 +169,5 @@ function Music() {
   for (let o=0; o<3; o++) {
     document.getElementById('textarea').innerHTML += '\n'+Notes.random()+' '+Chord.random();
   }
+  document.getElementById('textarea').innerHTML += '\n\n'+Instruments.random()+' + '+Instruments.random();
 }
