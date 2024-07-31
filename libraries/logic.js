@@ -11,10 +11,17 @@ var trope = 'scifi'
 const prefixes = ['XX_', 'Xx_', 'XX.', 'Xx.', 'The', '#1', 'THE', 'Captain', '', 'Black', 'Yellow', 'Green', 'Purple'];
 const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere', '99', '3', '', '++', '343', '47'];
 const spaces = ['', '_', '.'];
-const countries = ['America', 'Germany', 'Canada']
+const countries = ['America', 'Germany', 'Canada'];
+const styles = ['Country', 'Electronic', 'HipHop', 'Pop', 'Rock'];
+const Chord = ['Major', 'Minor', 'Diminished', 'Augmented', 'Major 7th', 'Minor 7th', 'Dominant 7th', 'Diminished 7th', 'Half-Diminished 7th', 'Diatonic', 'Slash', 'Sus', 'Add'];
+const Notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'Ab', 'Bb', 'C#', 'D#', 'G#', 'Eb']
 
-document.getElementById("profile").addEventListener('click', () => {
-  identity();
+Array.prototype.random = function () {
+  return this[Math.floor((Math.random()*this.length))];
+}
+
+document.getElementById("music").addEventListener('click', () => {
+  Music();
 });
 
 document.getElementById("users").addEventListener('click', () => {
@@ -37,91 +44,39 @@ document.getElementById("logo").addEventListener('click', () => {
   Logo();
 });
 
-function identity() {
-  document.getElementById('textarea').innerHTML = '';
-  age = Math.floor(Math.random() * (70 - 18 + 1) + 18);
-  p = Math.random();
-
-  if(p >= 0.5) {
-    gender = 'Male';
-  }
-  else {
-    gender = 'Female';
-  }
-  country = countries[Math.floor(Math.random()*countries.length)];
-  if(country == 'America') {
-    usnames();
-  }
-  else if(country == 'Germany') {
-    germannames();
-  }
-  else {
-    canadanames();
-  }
-  lastname = lastnames[Math.floor(Math.random()*lastnames.length)];
-  document.getElementById('textarea').innerHTML = firstname + ' ' + lastname + '\n' + 'gender: ' + gender + '\n' + 'birth: ' + country + '\n' + 'age: ' + age;
-}
-
-function usnames() {
-  if(p >= 0.5) {
-    firstname = males_us[Math.floor(Math.random()*males_us.length)];
-  }
-  else {
-    firstname = females_us[Math.floor(Math.random()*females_us.length)];
-  }
-}
-
-function germannames() {
-  if(p >= 0.5) {
-    firstname = males_german[Math.floor(Math.random()*males_german.length)];
-  }
-  else {
-    firstname = females_german[Math.floor(Math.random()*females_german.length)];
-  }
-}
-
-function canadanames() {
-  if(p >= 0.5) {
-    firstname = males_canada[Math.floor(Math.random()*males_canada.length)];
-  }
-  else {
-    firstname = females_canada[Math.floor(Math.random()*females_canada.length)];
-  }
-}
-
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
   for (let i = 0; i < 5; i++) {
     p = Math.random();
     if (p <= 0.5) {
-      firstname = males_us[Math.floor(Math.random()*males_us.length)];
+      firstname = 'M: '+males_us.random();
     }
-    else firstname = females_us[Math.floor(Math.random()*females_us.length)];
-    lastname = lastnames[Math.floor(Math.random()*lastnames.length)];
+    else firstname = 'F: '+females_us.random();
+    lastname = lastnames.random();
     document.getElementById('textarea').innerHTML += firstname + ' ' + lastname + '\n';
   }
 }
 
 function setting() {
   document.getElementById('textarea').innerHTML ='';
-  trope = tropes[Math.floor(Math.random()*tropes.length)];
+  trope = tropes.random();
   document.getElementById('textarea').innerHTML += trope + '\n + \n';
-  trope = tropes[Math.floor(Math.random()*tropes.length)];
+  trope = tropes.random();
   document.getElementById('textarea').innerHTML += trope + '\n\n';
   for (let j = 0; j < 3; j++) {
-    place = locations[Math.floor(Math.random()*locations.length)];
+    place = locations.random();
     document.getElementById('textarea').innerHTML += place + '\n';
   }
 }
 
 function Genere() {
   document.getElementById('textarea').innerHTML ='';
-  genere = genres[Math.floor(Math.random()*genres.length)];
+  genere = genres.random();
   document.getElementById('textarea').innerHTML += genere + '\n + \n';
-  genere = genres[Math.floor(Math.random()*genres.length)];
+  genere = genres.random();
   document.getElementById('textarea').innerHTML += genere + '\n\n';
   for (let k = 0; k < 3; k++) {
-    themel = themes[Math.floor(Math.random()*themes.length)];
+    themel = themes.random();
     document.getElementById('textarea').innerHTML += themel + '\n';
   }
 }
@@ -130,7 +85,7 @@ function usernames() {
   document.getElementById('textarea').innerHTML = '';
 
   for (let i = 0; i < 5; i++) {
-    var first = gamertags[Math.floor(Math.random()*gamertags.length)];
+    var first = gamertags.random();
 
     var re = first;
     var res = re;
@@ -150,7 +105,7 @@ function usernames() {
     }
     first = res;
   
-    var last = gamertags[Math.floor(Math.random()*gamertags.length)];
+    var last = gamertags.random();
   
     var re = last;
     var res = re
@@ -170,9 +125,9 @@ function usernames() {
     }
     last = res;
   
-    var space = spaces[Math.floor(Math.random()*spaces.length)];
-    var prefix = prefixes[Math.floor(Math.random()*prefixes.length)];
-    var suffix = suffixes[Math.floor(Math.random()*suffixes.length)];
+    var space = spaces.random();
+    var prefix = prefixes.random();
+    var suffix = suffixes.random();
     var tag = prefix + first + space + last + suffix;
   
   
@@ -183,8 +138,35 @@ function usernames() {
 function Logo() {
   document.getElementById('textarea').innerHTML = '';
   for (let l = 0; l < 3; l++) {
-    var brand = brands[Math.floor(Math.random()*brands.length)];
-    var style = styles[Math.floor(Math.random()*styles.length)];
+    var brand = brands.random();
+    var style = motives.random();
     document.getElementById('textarea').innerHTML += "A "+brand+" brand with a focus on "+style+".\n\n"
+  }
+}
+
+function Music() {
+  document.getElementById('textarea').innerHTML = '';
+  for (let z=0; z<3; z++) {
+    var muse = styles.random();
+    switch (muse) {
+      case 'Country':
+        document.getElementById('textarea').innerHTML += Country.random()+'\n';
+        break;
+      case 'Rock':
+        document.getElementById('textarea').innerHTML += Rock.random()+'\n';
+        break;
+      case 'HipHop':
+        document.getElementById('textarea').innerHTML += HipHop.random()+'\n';
+        break;
+      case 'Pop':
+        document.getElementById('textarea').innerHTML += Pop.random()+'\n';
+        break;
+      default:
+        document.getElementById('textarea').innerHTML += Electronic.random()+'\n';
+        break;
+    }
+  }
+  for (let o=0; o<3; o++) {
+    document.getElementById('textarea').innerHTML += '\n'+Notes.random()+' '+Chord.random();
   }
 }
