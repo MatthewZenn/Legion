@@ -13,6 +13,7 @@ const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere',
 const spaces = ['', '_', '.'];
 const countries = ['America', 'Germany', 'Canada'];
 const styles = ['Country', 'Electronic', 'HipHop', 'Pop', 'Rock'];
+const notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'F#', 'Bb', 'G#', 'C#', 'Eb'];
 
 Array.prototype.random = function () {
   return this[Math.floor((Math.random()*this.length))];
@@ -163,5 +164,9 @@ function Music() {
         document.getElementById('textarea').innerHTML += Electronic.random()+'\n';
         break;
     }
+  }
+  document.getElementById('textarea').innerHTML += '\n\n';
+  for (let v=0; v<5; v++) {
+    document.getElementById('textarea').innerHTML += notes.random()+' ';
   }
 }
