@@ -14,7 +14,7 @@ const gamertags = ['Noob', 'Slayer', 'Master', 'Unicorn', 'Demon', 'Hammer', 'Ga
 
 const brands = ['sport', 'tech', 'clothing', 'food', 'networking', 'music', 'transportation', 'media', 'shipping', 'productivity', 'wellness', 'design', 'software', 'hardware', 'tourism', 'travel'];
 
-const motives = ['sustainability', 'relations', 'self-care', 'cooking', 'managment', 'expression', 'AI', 'money', 'students', 'productivity', 'education', 'creators', 'multimedia', 'animals', 'awarness', 'entertainment', ''];
+const motives = ['sustainability', 'relations', 'self-care', 'cooking', 'managment', 'expression', 'AI', 'money', 'students', 'productivity', 'education', 'creators', 'multimedia', 'animals', 'awarness', 'entertainment', 'community'];
 
 const tropes = ['Sci-Fi', 'Fantasy', 'Documentary', 'Apocalypse', 'Lovecraftian', 'Orwellian', 'Horror', 'Western', 'Historical', 'Mystery', 'Gothic', 'Cyberpunk', 'Steampunk', 'Raypunk', 'Alternate History', 'Drama', 'Comedy', 'Greek Tradgedy', 'Horatian Satire', 'Menippean Satire', 'Julian Satire', 'Mythos', 'Fable', 'Romance', 'Superhero', 'Satire', 'Dark Fantasy', 'Eldritch Horror', 'Fairytale', 'Magical Realism', 'Dystopian', 'Thriller', 'Epistolic', 'Utopian', 'Biopunk', 'Atompunk', 'Urban Legend'];
 
@@ -22,4 +22,4 @@ const Country = ['Country', 'Western Swing', 'Country Rock', 'Truck-Driving', 'S
 const Electronic = ['Electronic', 'House', 'Acid House', 'Techno', 'Hard Bass', 'Trance', 'Progressive House', 'EuroDance', 'Ambient', 'Bass', 'BreakBeat', 'ChipTune', 'DubStep', 'Electro House', 'EuroBeat', 'Future Houe', 'HardCore', 'JumpStyle', 'Bounce', 'SynthWave'];
 const Rock = ['Rock', 'Metal', 'Heavy Metal', 'DeathCore', 'Progressive Metal', 'Christian rock', 'Mathcore', 'Thrasher', 'DoomCore', 'Argent Metal'];
 const HipHop = ['Hip-Hop', 'LoFi', 'Rap', 'Jazz', 'Trap', 'Crunk', 'Rythm & Blues', 'Jersey Club'];
-const Pop = ['Pop', 'K-Pop', 'J-Pop', 'BubbleGum', 'Dance Pop', 'Synth Pop', 'Disco'];
+const Pop = ['Pop', 'K-Pop', 'J-Pop', 'BubbleGum', 'Dance Pop', 'Synth Pop', 'Disco', 'Gospel'];
