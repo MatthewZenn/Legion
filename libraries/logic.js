@@ -1,9 +1,3 @@
-var firstname = 'john';
-var lastname = 'smith';
-var age = 0;
-var country = 'asd';
-var gender = '';
-var p = 0;
 var place = 'Hotel';
 var genere = 'FPS';
 var themel = 'Apocalypse';
@@ -46,13 +40,7 @@ document.getElementById("logo").addEventListener('click', () => {
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
   for (let i = 0; i < 5; i++) {
-    p = Math.random();
-    if (p <= 0.5) {
-      firstname = 'M: '+males_us.random();
-    }
-    else firstname = 'F: '+females_us.random();
-    lastname = lastnames.random();
-    document.getElementById('textarea').innerHTML += firstname + ' ' + lastname + '\n';
+    document.getElementById('textarea').innerHTML += firstnames.random() + ' ' + lastnames.random() + '\n';
   }
 }
 
