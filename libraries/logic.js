@@ -39,7 +39,7 @@ document.getElementById("logo").addEventListener('click', () => {
 
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 8; i++) {
     document.getElementById('textarea').innerHTML += firstnames.random() + ' ' + lastnames.random() + '\n';
   }
 }
