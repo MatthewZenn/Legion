@@ -1,7 +1,3 @@
-var place = 'Hotel';
-var genere = 'FPS';
-var themel = 'Apocalypse';
-var trope = 'scifi'
 const prefixes = ['XX_', 'Xx_', 'XX.', 'Xx.', 'The', '#1', 'THE', 'Captain', '', 'Black', 'Yellow', 'Green', 'Purple'];
 const suffixes = ['_XX', '_xX', '.XX', '.xX', '69', '420', '1', '2', '_WasHere', '99', '3', '', '++', '343', '47'];
 const spaces = ['', '_', '.'];
@@ -46,25 +42,21 @@ function Persons() {
 
 function setting() {
   document.getElementById('textarea').innerHTML ='';
-  trope = tropes.random();
-  document.getElementById('textarea').innerHTML += trope + '\n + \n';
-  trope = tropes.random();
-  document.getElementById('textarea').innerHTML += trope + '\n\n';
-  for (let j = 0; j < 3; j++) {
-    place = locations.random();
-    document.getElementById('textarea').innerHTML += place + '\n';
+  for (let u = 0; u < 3; u++) {
+    document.getElementById('textarea').innerHTML += tropes.random() + '\n';
+  }
+  document.getElementById('textarea').innerHTML += '\n';
+  for (let j = 0; j < 4; j++) {
+    document.getElementById('textarea').innerHTML += locations.random() + '\n';
   }
 }
 
 function Genere() {
   document.getElementById('textarea').innerHTML ='';
-  genere = genres.random();
-  document.getElementById('textarea').innerHTML += genere + '\n + \n';
-  genere = genres.random();
-  document.getElementById('textarea').innerHTML += genere + '\n\n';
+  document.getElementById('textarea').innerHTML += genres.random() + '\n + \n';
+  document.getElementById('textarea').innerHTML += genres.random() + '\n\n';
   for (let k = 0; k < 3; k++) {
-    themel = themes.random();
-    document.getElementById('textarea').innerHTML += themel + '\n';
+    document.getElementById('textarea').innerHTML += themes.random() + '\n';
   }
 }
 
@@ -117,7 +109,6 @@ function usernames() {
     var suffix = suffixes.random();
     var tag = prefix + first + space + last + suffix;
   
-  
     document.getElementById('textarea').innerHTML += tag + '\n';
   }
 }
@@ -125,9 +116,7 @@ function usernames() {
 function Logo() {
   document.getElementById('textarea').innerHTML = '';
   for (let l = 0; l < 3; l++) {
-    var brand = brands.random();
-    var style = motives.random();
-    document.getElementById('textarea').innerHTML += "A "+brand+" brand with a focus on "+style+".\n\n"
+    document.getElementById('textarea').innerHTML += "A "+brands.random()+" brand with a focus on "+motives.random()+".\n\n"
   }
 }
 
@@ -153,7 +142,7 @@ function Music() {
         break;
     }
   }
-  document.getElementById('textarea').innerHTML += '\n\n';
+  document.getElementById('textarea').innerHTML += '\n';
   for (let v=0; v<5; v++) {
     document.getElementById('textarea').innerHTML += notes.random()+' ';
   }
