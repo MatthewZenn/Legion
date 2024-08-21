@@ -33,6 +33,10 @@ document.getElementById("logo").addEventListener('click', () => {
   Logo();
 });
 
+document.getElementById("random").addEventListener('click', () => {
+  getRandom();
+});
+
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
   for (let i = 0; i < 8; i++) {
@@ -146,4 +150,13 @@ function Music() {
   for (let v=0; v<5; v++) {
     document.getElementById('textarea').innerHTML += notes.random()+' ';
   }
+}
+
+function getRandom() {
+  document.getElementById('textarea').innerHTML = '';
+  
+  document.getElementById('textarea').innerHTML += Cards.random()+"\n";
+  document.getElementById('textarea').innerHTML += Math.floor((Math.random()*20)+1) +"\n";
+  document.getElementById('textarea').innerHTML += ['Heads', 'Tails'].random()+"\n";
+  
 }
