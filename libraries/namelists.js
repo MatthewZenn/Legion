@@ -20,7 +20,7 @@ const tropes = ['Sci-Fi', 'Fantasy', 'Documentary', 'Apocalypse', 'Lovecraftian'
 
 const Country = ['Country', 'Western Swing', 'Country Rock', 'Truck-Driving', 'Souther Soul'];
 const Electronic = ['Electronic', 'House', 'Acid House', 'Techno', 'Hard Bass', 'Trance', 'Progressive House', 'EuroDance', 'Ambient', 'Bass', 'BreakBeat', 'ChipTune', 'DubStep', 'Electro House', 'EuroBeat', 'Future Houe', 'HardCore', 'JumpStyle', 'Bounce', 'SynthWave'];
-const Rock = ['Rock', 'Metal', 'Heavy Metal', 'DeathCore', 'Progressive Metal', 'Christian rock', 'Mathcore', 'Thrasher', 'DoomCore', 'Argent Metal'];
+const Rock = ['Rock', 'Metal', 'Heavy Metal', 'DeathCore', 'Progressive Metal', 'Christian rock', 'Mathcore', 'Thrasher', 'DoomCore', 'Argent Metal', 'Djent'];
 const HipHop = ['Hip-Hop', 'LoFi', 'Rap', 'Jazz', 'Trap', 'Crunk', 'Rythm & Blues', 'Jersey Club'];
 const Pop = ['Pop', 'K-Pop', 'J-Pop', 'BubbleGum', 'Dance Pop', 'Synth Pop', 'Disco', 'Gospel'];
 
