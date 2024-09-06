@@ -39,8 +39,8 @@ document.getElementById("random").addEventListener('click', () => {
 
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
-  for (let i = 0; i < 8; i++) {
-    document.getElementById('textarea').innerHTML += firstnames.random() + ' ' + lastnames.random() + '\n';
+  for (let i = 0; i < 4; i++) {
+    document.getElementById('textarea').innerHTML += 'M: '+males.random()+' '+lastnames.random()+'\n'+'F: '+females.random()+' '+lastnames.random()+'\n';
   }
 }
 
