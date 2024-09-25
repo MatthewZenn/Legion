@@ -44,7 +44,11 @@ document.getElementById("random").addEventListener('click', () => {
 function citynames() {
   document.getElementById('textarea').innerHTML = '';
   for (let i = 0; i < 6; i++) {
-    document.getElementById('textarea').innerHTML += Town.random()+Burrow.random()+'\n';
+    x = Math.random();
+    if (x <= 0.5) {
+      document.getElementById('textarea').innerHTML += Title.random()+Town.random()+'s'+Burrow.random()+'\n';
+    }
+    else document.getElementById('textarea').innerHTML += Title.random()+Town.random()+Burrow.random()+'\n';
   }
 }
 function Persons() {
