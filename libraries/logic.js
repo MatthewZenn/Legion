@@ -17,6 +17,10 @@ document.getElementById("users").addEventListener('click', () => {
   usernames();
 });
 
+document.getElementById("city").addEventListener('click', () => {
+  citynames();
+});
+
 document.getElementById("names").addEventListener('click', () => {
   Persons();
 });
@@ -37,6 +41,12 @@ document.getElementById("random").addEventListener('click', () => {
   getRandom();
 });
 
+function citynames() {
+  document.getElementById('textarea').innerHTML = '';
+  for (let i = 0; i < 6; i++) {
+    document.getElementById('textarea').innerHTML += Town.random()+Burrow.random()+'\n';
+  }
+}
 function Persons() {
   document.getElementById('textarea').innerHTML = '';
   for (let i = 0; i < 4; i++) {

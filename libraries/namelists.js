@@ -25,3 +25,7 @@ const HipHop = ['Hip-Hop', 'LoFi', 'Rap', 'Jazz', 'Trap', 'Crunk', 'Rythm & Blue
 const Pop = ['Pop', 'K-Pop', 'J-Pop', 'BubbleGum', 'Dance Pop', 'Synth Pop', 'Disco', 'Gospel'];
 
 const Cards = ["Ace of Spades", "Ace of Diamonds", "Ace of Clubs", "Ace of Hearts", "Two of Spades", "Two of Diamonds", "Two of Clubs", "Two of Hearts", "Three of Spades", "Three of Diamonds", "Three of Clubs", "Three of Hearts", "Four of Spades", "Four of Diamonds", "Four of Clubs", "Four of Hearts", "Five of Spades", "Five of Diamonds", "Five of Clubs", "Five of Hearts", "Six of Spades", "Six of Diamonds", "Six of Clubs", "Six of Hearts", "Seven of Spades", "Seven of Diamonds", "Seven of Clubs", "Seven of Hearts", "Eight of Spades", "Eight of Diamonds", "Eight of Clubs", "Eight of Hearts", "Nine of Spades", "Nine of Diamonds", "Nine of Clubs", "Nine of Hearts", "Ten of Spades", "Ten of Diamonds", "Ten of Clubs", "Ten of Hearts", "King of Spades", "King of Diamonds", "King of Clubs", "King of Hearts", "Queen of Spades", "Queen of Diamonds", "Queen of Clubs", "Queen of Hearts", "Jack of Spades", "Jack of Diamonds", "Jack of Clubs", "Jack of Hearts"];
+
+const Town = ["Dunn", "Iron", "Ali", "Croff", "Whin", "Elver", "Felt", "Van", "Vandor", "Winter", "Harbor"];
+
+const Burrow = ["wich", "bourne", "ton", "borough", "ing", "age", "vale", "wood", "ford", "worth", "more", "cairn", "cester"];
