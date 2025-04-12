@@ -140,7 +140,7 @@ function Logo() {
 
 function Music() {
   document.getElementById('textarea').innerHTML = '';
-  for (let z=0; z<5; z++) {
+  for (let z=0; z<4; z++) {
     var muse = styles.random();
     switch (muse) {
       case 'Country':
@@ -160,7 +160,7 @@ function Music() {
         break;
     }
   }
-  document.getElementById('textarea').innerHTML += '\n';
+  document.getElementById('textarea').innerHTML += '\n' + challenge.random() + '\n\n';
   for (let v=0; v<5; v++) {
     document.getElementById('textarea').innerHTML += notes.random()+' ';
   }
